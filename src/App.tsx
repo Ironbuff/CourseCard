@@ -1,6 +1,6 @@
 
 
-import Coures from './pages/Coures'
+import Coures from './pages/courses/Coures'
 
 function App() {
 
