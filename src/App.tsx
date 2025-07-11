@@ -1,5 +1,6 @@
 
 
+import Coursedetail from './pages/coursedetail/Coursedetail'
 import Coures from './pages/courses/Coures'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
   return (
     <>
-     <Coures/>
+     {/* <Coures/> */}
+     <Coursedetail/>
     </>
   )
 }
