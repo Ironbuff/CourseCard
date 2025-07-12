@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navitems = [
-    { id: 1, name: "Courses", link: "/courses" },
+    { id: 1, name: "Courses", link: "/" },
     { id: 2, name: "CourseDetail", link: "/Coursedetail" },
   ];
 
