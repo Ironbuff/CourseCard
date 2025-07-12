@@ -17,18 +17,19 @@ const Coures = () => {
       id: 2,
       url: "https://qik.digital/img/service/logo/1.png",
       titlename: "Chat Box",
-      rotate:'rotate-[15deg]'
+      rotate:"rotate-[15deg]"
     },
     {
       id: 3,
       url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb-ilZjliZ8YBnBrHkuPD6Cg91iNvzmSsDUQ&s",
       titlename: "Vue js",
-      rotate:'rotate-[-15deg]'
+      rotate:"rotate-[-15deg]"
     },
     {
       id: 4,
       url: "https://i.pinimg.com/564x/61/ab/dc/61abdc0caf752e3ff7671975bf13e034.jpg",
       titlename: "pen",
+      rotate:""
     },
   ];
 
