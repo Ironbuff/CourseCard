@@ -2,6 +2,8 @@
 import Coursecard from "./components/Coursecard";
 import Coursetitle from "./components/Coursetitle";
 import fire from "../../../public/flame.png"
+import backgroundVideo from "../../assets/Screen Recording 2025-07-08 at 15.16.08.mov"; 
+
 
 const Coures = () => {
   const icons = [
@@ -9,16 +11,19 @@ const Coures = () => {
       id: 1,
       url: "https://play-lh.googleusercontent.com/n81qI0bLw8BrIwrh3UNQtzZZ6p7BnNZeCoImMHgNy-ZUtF1O4Ffdllc7majTe6tpgA=w240-h480-rw",
       titlename: "react icon",
+      rotate:'rotate-[-15deg]'
     },
     {
       id: 2,
       url: "https://qik.digital/img/service/logo/1.png",
       titlename: "Chat Box",
+      rotate:'rotate-[15deg]'
     },
     {
       id: 3,
       url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb-ilZjliZ8YBnBrHkuPD6Cg91iNvzmSsDUQ&s",
       titlename: "Vue js",
+      rotate:'rotate-[-15deg]'
     },
     {
       id: 4,
@@ -43,7 +48,19 @@ const Coures = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen max-w-7xl mx-auto gap-y-5 px-12 py-10">
+    <div className="flex flex-col relative  h-screen max-w-7xl mx-auto gap-y-5 px-12 py-10">
+
+
+      {/* Adding animation video */}
+       <video
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        src={backgroundVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+
       {/* top heading */}
       <div className="flex flex-col gap-y-2 items-start justify-center w-[60%] ">
         <p className="text-base font-light ">

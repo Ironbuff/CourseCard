@@ -7,6 +7,7 @@ interface valuedata{
     id:number,
     url:string,
     titlename:string,
+    rotate:string
 
 }
 
@@ -21,7 +22,7 @@ const Coursecard = ({
         {/* icon Section */}
         <div className='flex flex-row gap-x-5 items-center'>
             {value.map((item)=>(
-                <img key={item.id} src={item.url} alt={item.titlename} className=' w-16 h-16 rounded-xl rotate-[-60]'/>
+                <img key={item.id} src={item.url} alt={item.titlename} className={` w-16 h-16 rounded-xl ${item.rotate} `}/>
             ))}
         </div>
 

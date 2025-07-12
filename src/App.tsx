@@ -1,16 +1,23 @@
 
+import { Route, Routes } from 'react-router-dom'
 
-import Coursedetail from './pages/coursedetail/Coursedetail'
+import Navbar from './components/Navbar'
 import Coures from './pages/courses/Coures'
+import Coursedetail from './pages/coursedetail/Coursedetail'
 
 function App() {
 
 
   return (
-    <>
-     {/* <Coures/> */}
-     <Coursedetail/>
-    </>
+<>
+  <Navbar/>
+   <Routes>
+          <Route path='/Courses' element={<Coures/>}/>
+           
+          <Route path='/CourseDetail' element={<Coursedetail/>}/>
+   </Routes>
+
+</>
   )
 }
 
